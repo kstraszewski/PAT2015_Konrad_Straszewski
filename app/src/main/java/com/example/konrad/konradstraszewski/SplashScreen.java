@@ -7,7 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class MainActivity extends ActionBarActivity {
+public class SplashScreen extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,14 +15,14 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
         Thread waitingThread = new Thread(){
-          public void run(){
+          public void run(){                            // Wątek czekania
               try {
-                  sleep(5000);
+                  sleep(50);
               } catch (InterruptedException e) {
                   e.printStackTrace();
               }
               finally {
-                  Intent mainActivity = new Intent("android.intent.action.MAIN2");
+                  Intent mainActivity = new Intent("android.intent.action.MAIN2");          //Tworzenie nowego Activity
                   startActivity(mainActivity);
               }
 
