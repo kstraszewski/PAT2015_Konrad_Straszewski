@@ -17,7 +17,7 @@ public class SplashScreen extends ActionBarActivity {
         Thread waitingThread = new Thread(){
           public void run(){                            // Wątek czekania
               try {
-                  sleep(50);
+                  sleep(5000);
               } catch (InterruptedException e) {
                   e.printStackTrace();
               }
