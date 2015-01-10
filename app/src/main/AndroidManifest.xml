@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.konrad.konradstraszewski" >
+    <permission
+        android:name="com.example.konrad.atnight_maps.permission.MAPS_RECIVE"
+        android:protectionLevel="signature" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+
         <activity
             android:name=".SplashScreen"
             android:label="@string/app_name" >

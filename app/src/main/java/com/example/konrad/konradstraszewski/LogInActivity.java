@@ -16,6 +16,7 @@ import java.util.regex.Pattern;
 
 public class LogInActivity extends ActionBarActivity {
 
+
     Button onlyButton;
     EditText password_edit, e_mail;
 
